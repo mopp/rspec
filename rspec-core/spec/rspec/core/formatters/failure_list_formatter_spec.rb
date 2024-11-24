@@ -8,11 +8,11 @@ module RSpec::Core::Formatters
       output = run_example_specs_with_formatter('failures')
       expect(output).to eq(<<-EOS.gsub(/^\s+\|/, ''))
         |./spec/rspec/core/resources/formatter_specs.rb:4:is marked as pending but passes
-        |./spec/rspec/core/resources/formatter_specs.rb:36:fails
-        |./spec/rspec/core/resources/formatter_specs.rb:40:fails twice
-        |./spec/rspec/core/resources/formatter_specs.rb:47:fails with a backtrace that has no file
-        |./spec/rspec/core/resources/formatter_specs.rb:53:fails with a backtrace containing an erb file
-        |./spec/rspec/core/resources/formatter_specs.rb:71:raises
+        |./spec/rspec/core/resources/formatter_specs.rb:38:fails
+        |./spec/rspec/core/resources/formatter_specs.rb:42:fails twice
+        |./spec/rspec/core/resources/formatter_specs.rb:49:fails with a backtrace that has no file
+        |./spec/rspec/core/resources/formatter_specs.rb:55:fails with a backtrace containing an erb file
+        |./spec/rspec/core/resources/formatter_specs.rb:73:raises
       EOS
     end
   end
