@@ -34,3 +34,9 @@ Metrics/ModuleLength:
 
 Metrics/PerceivedComplexity:
   Max: 19
+
+Style/ExpandPathArguments:
+  Enabled: false
+
+Style/AccessModifierDeclarations:
+  Enabled: false

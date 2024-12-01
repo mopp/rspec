@@ -30,6 +30,10 @@ Layout/LineLength:
 Metrics/MethodLength:
   Max: 39
 
+Metrics/ModuleLength:
+  Exclude:
+    - spec/**/*
+
 # This should go down over time.
 Metrics/CyclomaticComplexity:
   Max: 12
@@ -103,3 +107,6 @@ Metrics/BlockLength:
   Max: 206
   Exclude:
     - spec/**/*.rb
+
+Style/AccessModifierDeclarations:
+  Enabled: false

@@ -9,6 +9,19 @@ AllCops:
     - bin/*
     - tmp/**/*
 
+Style/AccessModifierDeclarations:
+  Exclude:
+    - lib/rspec/matchers/composable.rb
+    - lib/rspec/matchers/built_in/base_matcher.rb
+
+Lint/Void:
+  Exclude:
+    - spec/rspec/matchers/built_in/yield_spec.rb
+
+Lint/ConstantDefinitionInBlock:
+  Exclude:
+    - spec/**/*
+
 # Over time we'd like to get this down, but this is what we're at now.
 Layout/LineLength:
   Max: 186

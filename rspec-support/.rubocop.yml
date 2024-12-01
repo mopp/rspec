@@ -12,6 +12,10 @@ Metrics/BlockLength:
   Exclude:
     - spec/**/*
 
+Metrics/ModuleLength:
+  Exclude:
+    - spec/rspec/support/method_signature_verifier_spec.rb
+
 # Over time we'd like to get this down, but this is what we're at now.
 Metrics/PerceivedComplexity:
   Max: 10
@@ -35,5 +39,3 @@ Lint/AssignmentInCondition:
 Style/FrozenStringLiteralComment:
   Include:
     - lib/**/*.rb
-Layout/EmptyLineAfterMagicComment:
-  Enabled: true
